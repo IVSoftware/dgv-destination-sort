@@ -1,4 +1,4 @@
-The accepted [answer](https://stackoverflow.com/a/75297887/5438626) is excellent, but I would be remiss if I didn't mention how `DataGridView` might save you a lot of legwork by automatically configuring itself based on your `Destination` class.
+The accepted [answer](https://stackoverflow.com/a/75297887/5438626) is excellent, but I'd be remiss if I didn't mention how `DataGridView` might save you a lot of legwork by automatically configuring itself based on your `Destination` class.
 
 [![screenshot][1]][1]
 
