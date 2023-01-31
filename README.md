@@ -22,6 +22,8 @@ The accepted [answer](https://stackoverflow.com/a/75297887/5438626) is excellent
 ***
 > I want to sort them by the distance or the price. 
 
+Implementation where consecutive clicks on same header alternates low-to-high or high-to-low.
+
     private void sortByHeader(object? sender, DataGridViewCellMouseEventArgs e)
     {
         Destination[] tmp;
@@ -67,6 +69,8 @@ The accepted [answer](https://stackoverflow.com/a/75297887/5438626) is excellent
     string? _prevColumn = null;
     bool _highToLow = false;
 ***
+**Auto-Generate Columns**
+
 The method that loads the main form configures the `DataGridView` using the `Destination` class as a template and attaches the `dataGridView.ColumnHeaderMouseClick` event to sort the data. The `DataSource` of the data grid is set to `Destinations` which is a `BindingList<Destination>`.
 
     public partial class MainForm : Form
@@ -97,11 +101,8 @@ The method that loads the main form configures the `DataGridView` using the `Des
         .
         .
     }
-
-Consecutive clicks on the same header will perform alternate low-to-high or high-to-low.
-
 ***
->Now I want to add destinations with a name, the distance to that location and the price for that trip...
+>Now [...] add destinations with a name, the distance to that location and the price...
 
     private void addDestinationsToExample()
     {
