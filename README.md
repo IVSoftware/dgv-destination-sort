@@ -64,6 +64,8 @@ The accepted [answer](https://stackoverflow.com/a/75297887/5438626) is excellent
             }
         }
     }
+    string? _prevColumn = null;
+    bool _highToLow = false;
 ***
 The method that loads the main form configures the `DataGridView` using the `Destination` class as a template and attaches the `dataGridView.ColumnHeaderMouseClick` event to sort the data. The `DataSource` of the data grid is set to `Destinations` which is a `BindingList<Destination>`.
 
